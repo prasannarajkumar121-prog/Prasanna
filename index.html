@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prasanna ❤️ Yogss</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:url('hero.jpg') center center/cover no-repeat;
+    filter:brightness(0.4);
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.85)
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Dancing Script',cursive;
+    font-size:5rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.counter{
+    margin-top:25px;
+    font-size:1.4rem;
+    color:#ffb3c7;
+    font-weight:600;
+}
+
+/* SECTION */
+
+section{
+    padding:90px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:35px;
+    color:#ff96b5;
+    font-family:'Dancing Script',cursive;
+}
+
+/* STORY */
+
+.story{
+    background:#0f0f0f;
+}
+
+.story p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+    font-size:1.1rem;
+}
+
+/* LETTER */
+
+.letter{
+    background:#161616;
+}
+
+.letter-box{
+    max-width:850px;
+    margin:auto;
+    background:#222;
+    padding:40px;
+    border-radius:20px;
+    line-height:2;
+    box-shadow:0 0 25px rgba(255,255,255,0.05);
+}
+
+/* GALLERY */
+
+.gallery{
+    background:#0f0f0f;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.grid img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.grid img:hover{
+    transform:scale(1.04);
+}
+
+/* SONG */
+
+.song{
+    background:#161616;
+    text-align:center;
+}
+
+.song a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:#ff5d8f;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    text-align:center;
+    padding:35px;
+}
+
+footer span{
+    color:#ff7ea8;
+}
+
+/* HEARTS */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    animation:float linear forwards;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:0;
+    }
+    15%{
+        opacity:1;
+    }
+    to{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+.title{
+    font-size:2.2rem;
+}
+
+.counter{
+    font-size:1rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Prasanna ❤️ Yogss</h1>
+
+<p>
+Every wave returns to the shore,
+just as my heart always returns to you.
+</p>
+
+<div class="counter" id="counter"></div>
+
+</div>
+
+</section>
+
+<section class="story">
+
+<h2 class="title">Our Story</h2>
+
+<p>
+Like two seashells meeting by the ocean,
+our paths crossed and created something beautiful.
+Every smile, every memory and every conversation
+became part of our journey.
+No matter how many waves come and go,
+what we have remains special.
+</p>
+
+</section>
+
+<section class="letter">
+
+<h2 class="title">To Yogss 💌</h2>
+
+<div class="letter-box">
+
+<p>
+Every moment with you becomes a memory worth keeping.
+Like the shells we held beside the sea,
+our story is simple, beautiful and rare.
+</p>
+
+<br>
+
+<p>
+When I look back at our memories,
+I realize the best parts of my life
+are the moments shared with you.
+</p>
+
+<br>
+
+<p>
+No matter where life takes us,
+you'll always be my favorite place to return to.
+</p>
+
+<br>
+
+<p>
+Forever Yours ❤️
+<br><br>
+Prasanna
+</p>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2 class="title">Our Memories 📸</h2>
+
+<div class="grid">
+
+<img src="hero.jpg" alt="Memory 1">
+<img src="hero.jpg" alt="Memory 2">
+<img src="hero.jpg" alt="Memory 3">
+
+</div>
+
+</section>
+
+<section class="song">
+
+<h2 class="title">Our Song 🎵</h2>
+
+<p>I Wanna Be Yours</p>
+
+<a href="https://www.youtube.com/results?search_query=I+Wanna+Be+Yours" target="_blank">
+Play Song
+</a>
+
+</section>
+
+<footer>
+
+Made with ❤️ by
+<span>Prasanna</span>
+for
+<span>Yogss</span>
+
+</footer>
+
+<script>
+
+/* RELATIONSHIP DATE */
+
+const startDate = new Date("2026-03-02T00:00:00");
+
+function updateCounter(){
+
+    const now = new Date();
+
+    const diff = now - startDate;
+
+    if(diff < 0){
+
+        document.getElementById("counter").innerHTML =
+        "Our journey begins on 02 March 2026 ❤️";
+
+        return;
+    }
+
+    const days =
+    Math.floor(diff/(1000*60*60*24));
+
+    const hours =
+    Math.floor((diff/(1000*60*60))%24);
+
+    const minutes =
+    Math.floor((diff/(1000*60))%60);
+
+    const seconds =
+    Math.floor((diff/1000)%60);
+
+    document.getElementById("counter").innerHTML =
+    `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds Together ❤️`;
+}
+
+updateCounter();
+setInterval(updateCounter,1000);
+
+/* FLOATING HEARTS */
+
+function createHeart(){
+
+    const heart =
+    document.createElement('div');
+
+    heart.classList.add('heart');
+
+    heart.innerHTML = '❤️';
+
+    heart.style.left =
+    Math.random()*100 + 'vw';
+
+    heart.style.fontSize =
+    (Math.random()*20 + 15) + 'px';
+
+    heart.style.animationDuration =
+    (Math.random()*5 + 5) + 's';
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },10000);
+}
+
+setInterval(createHeart,350);
+
+</script>
+
+</body>
+</html>
